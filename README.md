@@ -3,6 +3,8 @@ vim-scala-setup
 
 Vim Scala Setup based on http://bleibinha.us/blog/2013/08/my-vim-setup-for-scala
 
+Vim environment setup based on http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
 Install guide
 =============
 
@@ -24,6 +26,11 @@ Windows
 Then create a file ``~/_vimrc`` with the content:
 
     source ~/vimfiles/vimrc
+    
+Updating plugins
+================
+
+    git submodule foreach git pull origin master
     
 General
 =======
