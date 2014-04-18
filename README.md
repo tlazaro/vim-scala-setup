@@ -36,3 +36,5 @@ General
 =======
 
 Some plugins require you to compile them like ``command-t``. List with all plugins that require further action coming soon.
+
+  * Install ctags in your OS
