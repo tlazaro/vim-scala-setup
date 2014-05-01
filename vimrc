@@ -5,6 +5,12 @@ execute pathogen#infect()
 syntax on
 "filetype plugin indent on
 
+set encoding=utf-8
+let g:Powerline_symbols = 'fancy'
+set guifont=Inconsolata\ For\ Powerline
+set rtp+=/usr/local/lib/python2.7/dist-packages/Powerline-beta-py2.7.egg/powerline/bindings/vim/
+set laststatus=2
+
 " ctags
 set tags=tags;/
 
