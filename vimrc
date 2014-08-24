@@ -1,10 +1,23 @@
 " set shell=/bin/sh
 
 " pathogen
-execute pathogen#infect()
+" execute pathogen#infect()
+execute pathogen#infect('bundle/{}', '~/vim_local/{}')
 syntax on
 "filetype plugin indent on
 
+" Shortcut to rapidly toggle `set list`
+nmap <leader>l :set list!<CR>
+
+" Use the same symbols as TextMate for tabstops and EOLs
+" set listchars=tab:▸\ ,eol:¬
+set listchars=tab:-\ ,eol:¬
+
+"Invisible character colors 
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
+" powerline configuration
 set encoding=utf-8
 let g:Powerline_symbols = 'fancy'
 set guifont=Inconsolata\ For\ Powerline
