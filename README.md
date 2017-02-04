@@ -39,7 +39,28 @@ Final Setup Steps
   * Compile ``command-t``: https://github.com/wincent/Command-T
 
   * Install ``ctags`` in your OS 
-    
+
+  * Install `powerline`
+
+### Install Powerline Linux
+
+Instal powerline from the bundle in `.vim`:
+
+    pip install --user --editable=$HOME/.vim/bundle/powerline
+
+    cp $HOME/.vim/bundle/powerline/font/PowerlineSymbols.otf ~/.fonts/
+    fc-cache -vf ~/.fonts/
+
+    cp $HOME/.vim/bundle/powerline/font/10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
+
+Install fonts that work with Powerline:
+
+    git clone git@github.com:powerline/fonts.git
+    cd fonts
+    ./install.sh
+
+Then set you terminal to use one of those font, you can try `Inconsolata for Powerline`.
+
 Updating plugins
 ================
 
